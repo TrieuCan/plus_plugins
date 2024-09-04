@@ -1,4 +1,4 @@
-import 'package:connectivity_plus_platform_interface/connectivity_plus_platform_interface.dart';
+import 'package:connectivity_plus/connectivity_plus_platform_interface.dart';
 
 /// Parses the given list of states to a list of [ConnectivityResult].
 List<ConnectivityResult> parseConnectivityResults(List<String> states) {

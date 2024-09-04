@@ -4,12 +4,11 @@
 
 import 'dart:async';
 
-import 'package:connectivity_plus_platform_interface/connectivity_plus_platform_interface.dart';
 import 'package:collection/collection.dart';
+import 'package:connectivity_plus/connectivity_plus_platform_interface.dart'
+    show ConnectivityPlatform, ConnectivityResult;
 
 // Export enums from the platform_interface so plugin users can use them directly.
-export 'package:connectivity_plus_platform_interface/connectivity_plus_platform_interface.dart'
-    show ConnectivityResult;
 
 export 'src/connectivity_plus_linux.dart'
     if (dart.library.js_interop) 'src/connectivity_plus_web.dart';

@@ -1,4 +1,4 @@
-import 'package:connectivity_plus_platform_interface/connectivity_plus_platform_interface.dart';
+import 'package:connectivity_plus/connectivity_plus_platform_interface.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
 import 'web/dart_html_connectivity_plugin.dart';

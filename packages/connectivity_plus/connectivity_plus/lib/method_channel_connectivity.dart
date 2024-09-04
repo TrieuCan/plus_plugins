@@ -4,10 +4,10 @@
 
 import 'dart:async';
 
-import 'package:connectivity_plus_platform_interface/connectivity_plus_platform_interface.dart';
 import 'package:flutter/services.dart';
 import 'package:meta/meta.dart';
 
+import 'connectivity_plus_platform_interface.dart';
 import 'src/utils.dart';
 
 /// An implementation of [ConnectivityPlatform] that uses method channels.
@@ -27,11 +27,10 @@ class MethodChannelConnectivity extends ConnectivityPlatform {
   /// Fires whenever the connectivity state changes.
   @override
   Stream<List<ConnectivityResult>> get onConnectivityChanged {
-    _onConnectivityChanged ??= eventChannel
+    return _onConnectivityChanged ??= eventChannel
         .receiveBroadcastStream()
         .map((dynamic result) => List<String>.from(result))
         .map(parseConnectivityResults);
-    return _onConnectivityChanged!;
   }
 
   @override

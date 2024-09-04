@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:connectivity_plus_platform_interface/connectivity_plus_platform_interface.dart';
+import 'package:connectivity_plus/connectivity_plus_platform_interface.dart';
 import 'package:meta/meta.dart';
 import 'package:nm/nm.dart';
 

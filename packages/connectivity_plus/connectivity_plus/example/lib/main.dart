@@ -8,6 +8,7 @@ import 'dart:async';
 import 'dart:developer' as developer;
 
 import 'package:connectivity_plus/connectivity_plus.dart';
+import 'package:connectivity_plus/connectivity_plus_platform_interface.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

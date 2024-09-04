@@ -4,9 +4,9 @@
 
 import 'dart:async';
 
+import 'package:connectivity_plus/method_channel_connectivity.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
-import 'method_channel_connectivity.dart';
 import 'src/enums.dart';
 
 export 'src/enums.dart';
